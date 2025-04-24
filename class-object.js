@@ -64,18 +64,32 @@
 // #JavaScript #CodingForBeginners #WebDevelopment #LearnToCode #JSClasses #ObjectsInJS #Frontend
 
 class product {
-  // Propertes  ----> data mamber
+  // // Propertes  ----> data mamber
   name;
   price;
   rating;
 
+  // constrcter/
+  constructor(n, p, r) {
+    console.log("calling the constructer");
+    this.name = n;
+    this.price = p;
+    this.rating = r;
+  }
+
   // Behaviour
   // behaviour ---> function -- > member function
   display() {
-    console.log("Displayint the current product");
+    console.log(
+      "Displayint the current product",
+      this.name,
+      this.price,
+      this.rating
+    );
   }
 }
 //  variable decration
-const p = new product();
-// console.log(p);
+const p = new product("iphone", 10000, 5); // new create an empy and plane object
+// / in the above theses of code cunstructer method
+console.log(p);
 p.display;
