@@ -28,5 +28,7 @@ try {
 } catch {
   console.log("handeling");
   console.log("the end console of catch ");
+} finally {
+  console.log("Finally");
 }
 console.log("end");
