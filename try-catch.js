@@ -1,4 +1,4 @@
-try {
+// try {
 //   functionerrfound();
 // } catch (error) {
 //   console.error(error);
@@ -20,3 +20,13 @@ try {
 //   }
 //   console.error(e.message);
 // }
+
+try {
+  console.log("hello ");
+  console.log(error);
+  console.log("error is Occuring "); // excepttion of the this error go to the next line
+} catch {
+  console.log("handeling");
+  console.log("the end console of catch ");
+}
+console.log("end");
